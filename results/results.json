@@ -1,0 +1,508 @@
+{
+ "meta": {
+  "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35",
+  "python": "3.10.12",
+  "logical_cpus": 2,
+  "onnxruntime": "1.23.2"
+ },
+ "runs": [
+  {
+   "corpus_passages": 460,
+   "distractors": 0,
+   "retriever": "BM25 (normalized)",
+   "Recall@1": 0.6422939068100358,
+   "Recall@5": 0.8910394265232975,
+   "Recall@10": 0.9225806451612903,
+   "Recall@20": 0.9433691756272401,
+   "MRR@10": 0.7492487341412073,
+   "nDCG@10": 0.7922978277128123,
+   "MRR@10_ci95": [
+    0.7252234757132552,
+    0.772973932476606
+   ],
+   "query_ms_p50": 0.050671500503085554
+  },
+  {
+   "corpus_passages": 460,
+   "distractors": 0,
+   "retriever": "BM25 (normalized + light stem)",
+   "Recall@1": 0.7032258064516129,
+   "Recall@5": 0.9283154121863799,
+   "Recall@10": 0.9548387096774194,
+   "Recall@20": 0.9727598566308244,
+   "MRR@10": 0.8007654889912954,
+   "nDCG@10": 0.8391422043896,
+   "MRR@10_ci95": [
+    0.7803259120171675,
+    0.8209297194759061
+   ],
+   "query_ms_p50": 0.0904829994397005
+  },
+  {
+   "corpus_passages": 460,
+   "distractors": 0,
+   "retriever": "multilingual-e5-small",
+   "Recall@1": 0.6559139784946236,
+   "Recall@5": 0.9154121863799283,
+   "Recall@10": 0.9455197132616487,
+   "Recall@20": 0.9598566308243728,
+   "MRR@10": 0.7702033907947887,
+   "nDCG@10": 0.8138775817692505,
+   "MRR@10_ci95": [
+    0.7487829384758785,
+    0.7910086262688192
+   ],
+   "query_ms_p50": 5.2634770017903065
+  },
+  {
+   "corpus_passages": 460,
+   "distractors": 0,
+   "retriever": "Hybrid RRF (BM25 + multilingual-e5-small)",
+   "Recall@1": 0.7010752688172043,
+   "Recall@5": 0.9419354838709677,
+   "Recall@10": 0.9612903225806452,
+   "Recall@20": 0.9756272401433692,
+   "MRR@10": 0.8100856232576662,
+   "nDCG@10": 0.8482016724183385,
+   "MRR@10_ci95": [
+    0.7909748250554701,
+    0.8296929551077474
+   ],
+   "query_ms_p50": 5.353960001230007
+  },
+  {
+   "corpus_passages": 460,
+   "distractors": 0,
+   "retriever": "multilingual-e5-base",
+   "Recall@1": 0.6,
+   "Recall@5": 0.9053763440860215,
+   "Recall@10": 0.9390681003584229,
+   "Recall@20": 0.96415770609319,
+   "MRR@10": 0.7359910678727885,
+   "nDCG@10": 0.7867421445490658,
+   "MRR@10_ci95": [
+    0.7142530087362295,
+    0.7594443760293247
+   ],
+   "query_ms_p50": 15.774730001794524
+  },
+  {
+   "corpus_passages": 460,
+   "distractors": 0,
+   "retriever": "Hybrid RRF (BM25 + multilingual-e5-base)",
+   "Recall@1": 0.6874551971326165,
+   "Recall@5": 0.942652329749104,
+   "Recall@10": 0.9598566308243728,
+   "Recall@20": 0.9756272401433692,
+   "MRR@10": 0.8013073903396483,
+   "nDCG@10": 0.8413100495697124,
+   "MRR@10_ci95": [
+    0.7818204916044956,
+    0.8204863246439978
+   ],
+   "query_ms_p50": 15.865213001234224
+  },
+  {
+   "corpus_passages": 460,
+   "distractors": 0,
+   "retriever": "bge-m3",
+   "Recall@1": 0.6501792114695341,
+   "Recall@5": 0.9247311827956989,
+   "Recall@10": 0.9397849462365592,
+   "Recall@20": 0.9598566308243728,
+   "MRR@10": 0.7711648745519714,
+   "nDCG@10": 0.8137655322969068,
+   "MRR@10_ci95": [
+    0.7491432772137446,
+    0.7925078816200861
+   ],
+   "query_ms_p50": 39.55761200086272
+  },
+  {
+   "corpus_passages": 460,
+   "distractors": 0,
+   "retriever": "Hybrid RRF (BM25 + bge-m3)",
+   "Recall@1": 0.7146953405017921,
+   "Recall@5": 0.9448028673835125,
+   "Recall@10": 0.9670250896057347,
+   "Recall@20": 0.978494623655914,
+   "MRR@10": 0.8190305512886158,
+   "nDCG@10": 0.856214274433488,
+   "MRR@10_ci95": [
+    0.7999444951777129,
+    0.8381018106900455
+   ],
+   "query_ms_p50": 39.64809500030242
+  },
+  {
+   "corpus_passages": 2460,
+   "distractors": 2000,
+   "retriever": "BM25 (normalized)",
+   "Recall@1": 0.6164874551971327,
+   "Recall@5": 0.8673835125448028,
+   "Recall@10": 0.8960573476702509,
+   "Recall@20": 0.9168458781362007,
+   "MRR@10": 0.7205410479604029,
+   "nDCG@10": 0.7639833308723041,
+   "MRR@10_ci95": [
+    0.6964457823231722,
+    0.7447656976910504
+   ],
+   "query_ms_p50": 0.11151149919896852
+  },
+  {
+   "corpus_passages": 2460,
+   "distractors": 2000,
+   "retriever": "BM25 (normalized + light stem)",
+   "Recall@1": 0.6652329749103942,
+   "Recall@5": 0.9060931899641577,
+   "Recall@10": 0.9333333333333333,
+   "Recall@20": 0.9498207885304659,
+   "MRR@10": 0.7705848552085112,
+   "nDCG@10": 0.8111470492249725,
+   "MRR@10_ci95": [
+    0.7479659706043249,
+    0.7926106697178512
+   ],
+   "query_ms_p50": 0.25517600079183467
+  },
+  {
+   "corpus_passages": 2460,
+   "distractors": 2000,
+   "retriever": "multilingual-e5-small",
+   "Recall@1": 0.6272401433691757,
+   "Recall@5": 0.8831541218637993,
+   "Recall@10": 0.9089605734767026,
+   "Recall@20": 0.9275985663082438,
+   "MRR@10": 0.7402093645104398,
+   "nDCG@10": 0.782368032151282,
+   "MRR@10_ci95": [
+    0.7173260171797733,
+    0.762671962535374
+   ],
+   "query_ms_p50": 5.198404000111623
+  },
+  {
+   "corpus_passages": 2460,
+   "distractors": 2000,
+   "retriever": "Hybrid RRF (BM25 + multilingual-e5-small)",
+   "Recall@1": 0.6659498207885305,
+   "Recall@5": 0.9182795698924732,
+   "Recall@10": 0.9455197132616487,
+   "Recall@20": 0.967741935483871,
+   "MRR@10": 0.7796074415429254,
+   "nDCG@10": 0.8211293289762495,
+   "MRR@10_ci95": [
+    0.7577125786636898,
+    0.8005277692804459
+   ],
+   "query_ms_p50": 5.453580000903457
+  },
+  {
+   "corpus_passages": 2460,
+   "distractors": 2000,
+   "retriever": "multilingual-e5-base",
+   "Recall@1": 0.5749103942652329,
+   "Recall@5": 0.8716845878136201,
+   "Recall@10": 0.899641577060932,
+   "Recall@20": 0.9204301075268817,
+   "MRR@10": 0.7065241508789896,
+   "nDCG@10": 0.7549256333334042,
+   "MRR@10_ci95": [
+    0.6837238699174183,
+    0.7319322533772782
+   ],
+   "query_ms_p50": 14.49961400066968
+  },
+  {
+   "corpus_passages": 2460,
+   "distractors": 2000,
+   "retriever": "Hybrid RRF (BM25 + multilingual-e5-base)",
+   "Recall@1": 0.668100358422939,
+   "Recall@5": 0.9189964157706093,
+   "Recall@10": 0.9448028673835125,
+   "Recall@20": 0.96415770609319,
+   "MRR@10": 0.7799766740626957,
+   "nDCG@10": 0.8212253110120994,
+   "MRR@10_ci95": [
+    0.7598258625406283,
+    0.8005094584966276
+   ],
+   "query_ms_p50": 14.754790001461515
+  },
+  {
+   "corpus_passages": 2460,
+   "distractors": 2000,
+   "retriever": "bge-m3",
+   "Recall@1": 0.6336917562724015,
+   "Recall@5": 0.8982078853046594,
+   "Recall@10": 0.9197132616487456,
+   "Recall@20": 0.9448028673835125,
+   "MRR@10": 0.7518180007964954,
+   "nDCG@10": 0.79405333872513,
+   "MRR@10_ci95": [
+    0.7304572243632893,
+    0.7733271567236701
+   ],
+   "query_ms_p50": 40.391446000285214
+  },
+  {
+   "corpus_passages": 2460,
+   "distractors": 2000,
+   "retriever": "Hybrid RRF (BM25 + bge-m3)",
+   "Recall@1": 0.6982078853046595,
+   "Recall@5": 0.9232974910394265,
+   "Recall@10": 0.9541218637992831,
+   "Recall@20": 0.9720430107526882,
+   "MRR@10": 0.8007063207600843,
+   "nDCG@10": 0.8389170733925966,
+   "MRR@10_ci95": [
+    0.7793704548317643,
+    0.8208365179580157
+   ],
+   "query_ms_p50": 40.64662200107705
+  }
+ ],
+ "comparisons": [
+  {
+   "distractors": 0,
+   "corpus_passages": 460,
+   "a": "BM25 (normalized)",
+   "b": "BM25 (normalized + light stem)",
+   "delta_mrr10": -0.05151675485008818,
+   "ci95": [
+    -0.06783839135957771,
+    -0.03654177364495455
+   ],
+   "excludes_zero": true
+  },
+  {
+   "distractors": 0,
+   "corpus_passages": 460,
+   "a": "multilingual-e5-small",
+   "b": "BM25 (normalized + light stem)",
+   "delta_mrr10": -0.030562098196506796,
+   "ci95": [
+    -0.05145811101295319,
+    -0.009310842968026808
+   ],
+   "excludes_zero": true
+  },
+  {
+   "distractors": 0,
+   "corpus_passages": 460,
+   "a": "Hybrid RRF (BM25 + multilingual-e5-small)",
+   "b": "BM25 (normalized + light stem)",
+   "delta_mrr10": 0.009320134266370827,
+   "ci95": [
+    -0.004415483001168485,
+    0.023011689644227583
+   ],
+   "excludes_zero": false
+  },
+  {
+   "distractors": 0,
+   "corpus_passages": 460,
+   "a": "multilingual-e5-base",
+   "b": "BM25 (normalized + light stem)",
+   "delta_mrr10": -0.06477442111850715,
+   "ci95": [
+    -0.08822262051561688,
+    -0.04009571417168401
+   ],
+   "excludes_zero": true
+  },
+  {
+   "distractors": 0,
+   "corpus_passages": 460,
+   "a": "Hybrid RRF (BM25 + multilingual-e5-base)",
+   "b": "BM25 (normalized + light stem)",
+   "delta_mrr10": 0.0005419013483529603,
+   "ci95": [
+    -0.015204492569165897,
+    0.015495027469924223
+   ],
+   "excludes_zero": false
+  },
+  {
+   "distractors": 0,
+   "corpus_passages": 460,
+   "a": "bge-m3",
+   "b": "BM25 (normalized + light stem)",
+   "delta_mrr10": -0.029600614439324113,
+   "ci95": [
+    -0.05306831176292972,
+    -0.006067993684929184
+   ],
+   "excludes_zero": true
+  },
+  {
+   "distractors": 0,
+   "corpus_passages": 460,
+   "a": "Hybrid RRF (BM25 + bge-m3)",
+   "b": "BM25 (normalized + light stem)",
+   "delta_mrr10": 0.018265062297320365,
+   "ci95": [
+    0.0030224313811411073,
+    0.033811034634514125
+   ],
+   "excludes_zero": true
+  },
+  {
+   "distractors": 0,
+   "corpus_passages": 460,
+   "a": "Hybrid RRF (BM25 + bge-m3)",
+   "b": "Hybrid RRF (BM25 + multilingual-e5-small)",
+   "delta_mrr10": 0.008944928030949538,
+   "ci95": [
+    -0.0025794661190206495,
+    0.020817169695548768
+   ],
+   "excludes_zero": false
+  },
+  {
+   "distractors": 0,
+   "corpus_passages": 460,
+   "a": "Hybrid RRF (BM25 + bge-m3)",
+   "b": "bge-m3",
+   "delta_mrr10": 0.04786567673664448,
+   "ci95": [
+    0.031886436578765644,
+    0.06518841279405099
+   ],
+   "excludes_zero": true
+  },
+  {
+   "distractors": 0,
+   "corpus_passages": 460,
+   "a": "multilingual-e5-small",
+   "b": "multilingual-e5-base",
+   "delta_mrr10": 0.03421232292200035,
+   "ci95": [
+    0.01625767119605176,
+    0.051035677692365874
+   ],
+   "excludes_zero": true
+  },
+  {
+   "distractors": 2000,
+   "corpus_passages": 2460,
+   "a": "BM25 (normalized)",
+   "b": "BM25 (normalized + light stem)",
+   "delta_mrr10": -0.05004380724810833,
+   "ci95": [
+    -0.06615453433464186,
+    -0.03440044796416286
+   ],
+   "excludes_zero": true
+  },
+  {
+   "distractors": 2000,
+   "corpus_passages": 2460,
+   "a": "multilingual-e5-small",
+   "b": "BM25 (normalized + light stem)",
+   "delta_mrr10": -0.030375490698071342,
+   "ci95": [
+    -0.052497990216201426,
+    -0.007349382793982292
+   ],
+   "excludes_zero": true
+  },
+  {
+   "distractors": 2000,
+   "corpus_passages": 2460,
+   "a": "Hybrid RRF (BM25 + multilingual-e5-small)",
+   "b": "BM25 (normalized + light stem)",
+   "delta_mrr10": 0.009022586334414292,
+   "ci95": [
+    -0.00685370097726752,
+    0.024296368154434828
+   ],
+   "excludes_zero": false
+  },
+  {
+   "distractors": 2000,
+   "corpus_passages": 2460,
+   "a": "multilingual-e5-base",
+   "b": "BM25 (normalized + light stem)",
+   "delta_mrr10": -0.06406070432952155,
+   "ci95": [
+    -0.08916848452213985,
+    -0.03781179203430628
+   ],
+   "excludes_zero": true
+  },
+  {
+   "distractors": 2000,
+   "corpus_passages": 2460,
+   "a": "Hybrid RRF (BM25 + multilingual-e5-base)",
+   "b": "BM25 (normalized + light stem)",
+   "delta_mrr10": 0.009391818854184443,
+   "ci95": [
+    -0.007549093522529074,
+    0.026554279613198728
+   ],
+   "excludes_zero": false
+  },
+  {
+   "distractors": 2000,
+   "corpus_passages": 2460,
+   "a": "bge-m3",
+   "b": "BM25 (normalized + light stem)",
+   "delta_mrr10": -0.018766854412015702,
+   "ci95": [
+    -0.0434444777326269,
+    0.00578461992984897
+   ],
+   "excludes_zero": false
+  },
+  {
+   "distractors": 2000,
+   "corpus_passages": 2460,
+   "a": "Hybrid RRF (BM25 + bge-m3)",
+   "b": "BM25 (normalized + light stem)",
+   "delta_mrr10": 0.03012146555157308,
+   "ci95": [
+    0.013488735186699859,
+    0.04674932380101709
+   ],
+   "excludes_zero": true
+  },
+  {
+   "distractors": 2000,
+   "corpus_passages": 2460,
+   "a": "Hybrid RRF (BM25 + bge-m3)",
+   "b": "Hybrid RRF (BM25 + multilingual-e5-small)",
+   "delta_mrr10": 0.02109887921715879,
+   "ci95": [
+    0.00915747739618362,
+    0.03323158792655233
+   ],
+   "excludes_zero": true
+  },
+  {
+   "distractors": 2000,
+   "corpus_passages": 2460,
+   "a": "Hybrid RRF (BM25 + bge-m3)",
+   "b": "bge-m3",
+   "delta_mrr10": 0.04888831996358878,
+   "ci95": [
+    0.03178166829602941,
+    0.06652584758271454
+   ],
+   "excludes_zero": true
+  },
+  {
+   "distractors": 2000,
+   "corpus_passages": 2460,
+   "a": "multilingual-e5-small",
+   "b": "multilingual-e5-base",
+   "delta_mrr10": 0.033685213631450196,
+   "ci95": [
+    0.01616838772126271,
+    0.051238836607357126
+   ],
+   "excludes_zero": true
+  }
+ ]
+}
